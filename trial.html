@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNex - Navigate Your Coding Future</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #6a6b6c; /* Dark background for better logo contrast */
+            color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            max-height: 80px; /* Adjusted for better visibility */
+        }
+
+        .navmenu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navmenu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .navmenu a:hover, .navmenu a.active {
+            background-color: #ffa726;
+            border-radius: 4px;
+        }
+
+        .btn-getstarted {
+            background-color: #ffa726;
+            color: #1c1c1e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-getstarted:hover {
+            background-color: #fb8c00;
+            color: #fff;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero .container {
+            z-index: 2;
+        }
+
+        .about .content {
+            padding: 20px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #ffa726;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #fb8c00;
+        }
+         /* Counts Section */
+         .counts .stats-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .counts .stats-item span {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffa726;
+        }
+
+        .counts .stats-item p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Why Us Section */
+        .why-us .why-box {
+            background: #24292e;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-us .icon-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-us .icon-box i {
+            font-size: 48px;
+            color: #ffa726;
+            margin-bottom: 15px;
+        }
+
+        /* Features Section */
+        .features .features-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .features .features-item i {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .features .features-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .features .features-item a {
+            color: #24292e;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .features .features-item a:hover {
+            color: #ffa726;
+        }
+    </style>
+</head>
+
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="Screenshot_2024-06-26_182237-removebg-preview%20(2).png" alt="CodeNex Logo">
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="btn-getstarted" href="contact.html">Get Started</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="hero" class="hero section">
+            <div class="container">
+                <h2>Navigate Your Coding Future with CodeNex</h2>
+                <p>Unlock the potential of your business with tailored web development solutions.</p>
+                <div class="d-flex mt-4">
+                    <a href="services.html" class="btn-get-started">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="About CodeNex">
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1 content">
+                        <h3>About CodeNex</h3>
+                        <p class="fst-italic">
+                            At CodeNex, we specialize in creating dynamic, responsive, and user-centric web solutions that drive business success.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Custom web development tailored to your needs.</li>
+                            <li><i class="bi bi-check-circle"></i> Innovative e-commerce solutions to boost your online sales.</li>
+                            <li><i class="bi bi-check-circle"></i> Progressive web apps that provide a seamless user experience.</li>
+                        </ul>
+                        <a href="about.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="counts" class="section counts">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Events Organized</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>Expert Developers</p>
+                        </div>
+                    </div><!-- End Stats Item -->
+                </div>
+            </div>
+        </section><!-- /Counts Section -->
+
+        <section id="why-us" class="section why-us">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="why-box">
+                            <h3>Why Choose CodeNex?</h3>
+                            <p>
+                                At CodeNex, we specialize in providing comprehensive web development solutions that empower businesses to thrive in the digital landscape. Our experienced team ensures innovative and tailored approaches to meet each client's unique needs.
+                            </p>
+                            <div class="text-center">
+                                <a href="about.html" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End Why Box -->
+
+                    <div class="col-lg-8 d-flex align-items-stretch">
+                        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-xl-4">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-clipboard-data"></i>
+                                    <h4>Data-Driven Solutions</h4>
+                                    <p>We leverage data to create strategies that drive results and enhance business growth.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-gem"></i>
+                                    <h4>Innovative Technologies</h4>
+                                    <p>Our expertise in the latest technologies ensures that your business stays ahead of the curve.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+
+                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-inboxes"></i>
+                                    <h4>Comprehensive Services</h4>
+                                    <p>From planning to execution, we provide a full range of services to meet your web development needs.</p>
+                                </div>
+                            </div><!-- End Icon Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Why Us Section -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+            document.querySelector('#navmenu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
