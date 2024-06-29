@@ -1,15 +1,4 @@
-/**
-* Template Name: Mentor
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Updated: Jun 14 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -86,8 +75,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
-  margin-right: 100px;
+  max-height: 32px;
+  margin-right: 30px;
 }
 
 .header .logo h1 {
