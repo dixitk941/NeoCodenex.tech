@@ -118,61 +118,99 @@
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 footer-info">
-          <h3>NeoCodeNex</h3>
-          <p>123 CodeNex Street<br>New York, NY 10001<br><strong>Phone:</strong> +91 9528202892<br><strong>Email:</strong> work.codenex@gmail.com<br></p>
-          <div class="social-links mt-3">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  
+<footer id="footer" class="footer position-relative">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">NeoCodenex</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <!-- <p>123 NeoCodenex Street</p>
+          <p>New York, NY 10001</p> -->
+          <p class="mt-3"><strong>Phone:</strong> <span>+91 9528202892</span></p>
+          <p><strong>Email:</strong> <span>work.NeoCodenex@gmail.com</span></p>
+        </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/dixitk941"><i class="bi bi-twitter"></i></a>
+<!--             <a href="#"><i class="bi bi-facebook"></i></a> -->
+            <a href="https://www.instagram.com/neocodenex/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/karan-dixit-7223a628a/"><i class="bi bi-linkedin"></i></a>
           </div>
-        </div>
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="webdevelopment.html">Web Development</a></li>
-            <li><a href="seo.html">SEO</a></li>
-            <li><a href="contentwriting.html">Content Writing</a></li>
-            <li><a href="creativedesign.html">Creative Design</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Join Our Newsletter</h4>
-          <p>Subscribe to our newsletter to stay updated on the latest news and offers.</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-        </div>
       </div>
-    </div>
-    <div class="container text-center mt-4">
-      <p>&copy; 2024 NeoCodeNex. All rights reserved. | Designed by <a href="https://karandixitportfolio.vercel.app">dixitk941</a></p>
-    </div>
-  </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Content Writing</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12 footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to our newsletter for the latest updates and promotions.</p>
+        <form action="forms/newsletter.php" method="post" class="php-email-form">
+          <div class="newsletter-form">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+          </div>
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container text-center mt-4">
+    <p>&copy; 2024 NeoCodenex. All rights reserved. | Designed by <a href="https://karandixitportfolio.vercel.app">dixitk941</a></p>
+  </div>
+
+</footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+      document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+          document.querySelector('#navmenu').classList.toggle('active');
+      });
+  </script>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
