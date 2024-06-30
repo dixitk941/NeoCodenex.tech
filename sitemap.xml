@@ -9,54 +9,74 @@
 
 <url>
   <loc>https://neocodenex.tech/</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://neocodenex.tech/index.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://neocodenex.tech/about.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://neocodenex.tech/portfolio.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <loc>https://neocodenex.tech/services.html</loc>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neocodenex.tech/pricing.html</loc>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://neocodenex.tech/contact.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://neocodenex.tech/webdevelopment.html</loc>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neocodenex.tech/seo.html</loc>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neocodenex.tech/creativedesign.html</loc>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://neocodenex.tech/form.html</loc>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<!-- <url>
   <loc>https://neocodenex.tech/course-details.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://neocodenex.tech/courses.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://neocodenex.tech/trainers.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://neocodenex.tech/events.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
+  <lastmod>2024-06-30T04:27:43+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://neocodenex.tech/pricing.html</loc>
-  <lastmod>2024-06-29T04:44:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+</url> -->
 
 
 </urlset>
