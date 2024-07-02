@@ -48,7 +48,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
 
+.projects-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
   </style>
 
   <meta name="google-site-verification" content="uPuVoCTBrzsaw6_yfF_A-YdxtWC9wMyWrJiIXkkFqYU" />
@@ -437,6 +468,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
+</section>
+
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <a href="http://www.parisspices.com" target="_blank">
+                    <img src="path/to/parisspices-thumbnail.jpg" alt="Paris Spices">
+                    <h3>Paris Spices</h3>
+                </a>
+            </div>
+            <div class="project-item">
+                <a href="http://www.hitownbears.live" target="_blank">
+                    <img src="path/to/hitownbears-thumbnail.jpg" alt="HiTown Bears">
+                    <h3>HiTown Bears</h3>
+                </a>
+            </div>
+            <div class="project-item">
+                <a href="http://www.samindiagroup.com" target="_blank">
+                    <img src="path/to/samindiagroup-thumbnail.jpg" alt="Sam India Group">
+                    <h3>Sam India Group</h3>
+                </a>
+            </div>
+            <div class="project-item">
+                <a href="https://karandixitportfolio.vercel.app" target="_blank">
+                    <img src="path/to/portfolio-thumbnail.jpg" alt="Karan Dixit's Portfolio">
+                    <h3>Karan Dixit's Portfolio</h3>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
 
