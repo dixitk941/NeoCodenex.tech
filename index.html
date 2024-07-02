@@ -47,23 +47,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
-
-.process-step {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.process-step h3 {
-  font-size: 1.25rem;
-  margin-top: 1rem;
-}
-
-.process-step p {
-  font-size: 0.9rem;
-  color: #666;
-}
+.process-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        .process-step {
+            margin-bottom: 30px;
+        }
+        .process-step img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .process-step h4 {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .process-step p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
 
 .projects-section {
     padding: 50px 0;
@@ -486,51 +492,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
 </section>
-
-<section id="our-process" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Process</h2>
-    <p class="text-center mb-5">Creative Solutions for Your Brand</p>
-
-    <div class="row">
-      <!-- Discovery & Planning -->
-      <div class="col-md-6 col-lg-3 text-center mb-4">
-        <div class="process-step">
-          <i class="fas fa-search fa-3x mb-3 text-primary"></i>
-          <h3>Discovery & Planning</h3>
-          <p>We dive deep into your goals, audience, and desired features. Together, we map out your project roadmap with key milestones and timelines, ensuring clarity from the start.</p>
+ <section class="process-section text-center">
+        <div class="container">
+            <h2>Our Process</h2>
+            <p class="lead">Creative Solutions for Your Brand</p>
+            <p>Over the years, we have developed an efficient process that allows us to create effective results aimed at achieving business goals.</p>
+            <div class="row mt-5">
+                <div class="col-md-3 process-step">
+                    <img src="https://via.placeholder.com/100" alt="Discovery & Planning">
+                    <h4>Discovery & Planning</h4>
+                    <p>We dive deep into your goals, audience, and desired features. Together, we map out your project roadmap with key milestones and timelines, ensuring clarity from the start.</p>
+                </div>
+                <div class="col-md-3 process-step">
+                    <img src="https://via.placeholder.com/100" alt="Design & Prototyping">
+                    <h4>Design & Prototyping</h4>
+                    <p>Our UI/UX wizards transform your vision into interactive wireframes and prototypes. This lets you experience the user journey firsthand and provide feedback before development begins, ensuring a design that’s both beautiful and functional.</p>
+                </div>
+                <div class="col-md-3 process-step">
+                    <img src="https://via.placeholder.com/100" alt="Development & Testing">
+                    <h4>Development & Testing</h4>
+                    <p>Our expert developers craft your website or app using cutting-edge tech and best practices. We prioritize clean code, secure architecture, and scalability for a robust and future-proof solution with rigorous testing throughout, guaranteeing a flawless user experience.</p>
+                </div>
+                <div class="col-md-3 process-step">
+                    <img src="https://via.placeholder.com/100" alt="Launch & Support">
+                    <h4>Launch & Support</h4>
+                    <p>Your launch is just the beginning! We guide you through app store optimization, marketing strategies, and user analytics. Plus, our 24/7 support ensures a smooth journey beyond launch.</p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Design & Prototyping -->
-      <div class="col-md-6 col-lg-3 text-center mb-4">
-        <div class="process-step">
-          <i class="fas fa-pencil-ruler fa-3x mb-3 text-warning"></i>
-          <h3>Design & Prototyping</h3>
-          <p>Our UI/UX wizards transform your vision into interactive wireframes and prototypes. This lets you experience the user journey firsthand and provide feedback before development begins, ensuring a design that’s both beautiful and functional.</p>
-        </div>
-      </div>
-
-      <!-- Development & Testing -->
-      <div class="col-md-6 col-lg-3 text-center mb-4">
-        <div class="process-step">
-          <i class="fas fa-code fa-3x mb-3 text-success"></i>
-          <h3>Development & Testing</h3>
-          <p>Our expert developers craft your website or app using cutting-edge tech and best practices. We prioritize clean code, secure architecture, and scalability for a robust and future-proof solution with rigorous testing throughout, guaranteeing a flawless user experience.</p>
-        </div>
-      </div>
-
-      <!-- Launch & Support -->
-      <div class="col-md-6 col-lg-3 text-center mb-4">
-        <div class="process-step">
-          <i class="fas fa-rocket fa-3x mb-3 text-danger"></i>
-          <h3>Launch & Support</h3>
-          <p>Your launch is just the beginning! We guide you through app store optimization, marketing strategies, and user analytics. Plus, our 24/7 support ensures a smooth journey beyond launch.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="projects" class="projects-section">
     <div class="container">
@@ -726,6 +717,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
