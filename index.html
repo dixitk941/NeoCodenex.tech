@@ -49,6 +49,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style>
 .process-section
 
+      /* Additional custom styles */
+        .carousel-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel-item img {
+            max-width: 150px;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+        .carousel-item img:hover {
+            transform: scale(1.1);
+        }
+
      /* Include this in your styles.css */
         .clients-section {
             padding: 50px 20px;
@@ -224,7 +239,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </section>
 
 
-    <section class="clients-section">
+<!--     <section class="clients-section">
         <h2>Our Clients</h2>
         <div class="clients-container">
             <div class="client">
@@ -244,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <!-- Add more clients as needed -->
         </div>
-    </section>
+    </section> -->
 
       <section id="counts" class="section counts">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
