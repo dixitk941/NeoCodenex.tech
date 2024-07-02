@@ -47,7 +47,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
-.process-section {
+.process-section
+
+     /* Include this in your styles.css */
+        .clients-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .clients-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .clients-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .client {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .client img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .client:hover {
+            transform: translateY(-10px);
+        }
+        .client h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .client p {
+            font-size: 1em;
+            color: #555;
+        }
+    {
             padding: 50px 0;
             background-color: #f8f9fa;
         }
@@ -175,6 +222,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
           </div>
       </section>
+
+
+    <section class="clients-section">
+        <h2>Our Clients</h2>
+        <div class="clients-container">
+            <div class="client">
+                <img src="https://www.parisspices.com/product-img/logo.jpeg" alt="Client 1 Logo">
+                <h3>ParisSpices</h3>
+<!--                 <p>Client 1 description or testimonial.</p> -->
+            </div>
+            <div class="client">
+                <img src="https://th.bing.com/th/id/OIP.a4kQNuHJDg3RWrBLa-RG-AAAAA?rs=1&pid=ImgDetMain" alt="Client 2 Logo">
+                <h3>Hitownbears</h3>
+<!--                 <p>Client 2 description or testimonial.</p> -->
+            </div>
+            <div class="client">
+                <img src="https://www.samindiagroup.com/assets/img/Screenshot_2024-07-02_105403-removebg-preview.png" alt="Client 3 Logo">
+                <h3>Sam India Group</h3>
+<!--                 <p>Client 3 description or testimonial.</p> -->
+            </div>
+            <!-- Add more clients as needed -->
+        </div>
+    </section>
+
       <section id="counts" class="section counts">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
