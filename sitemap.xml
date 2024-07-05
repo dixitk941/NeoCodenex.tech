@@ -1,75 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
-        <loc>https://neocodenex.tech/</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>1.00</priority>
+        <loc>https://neocodenex.tech</loc>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/index.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/about.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/services.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/pricing.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/contact.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/webdevelopment.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/seo.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/creativedesign.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://neocodenex.tech/form.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <!-- Uncomment and add more URLs as needed -->
-    <!-- <url>
-        <loc>https://neocodenex.tech/course-details.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.80</priority>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://neocodenex.tech/courses.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.64</priority>
+        <loc>https://neocodenex.tech/home.html</loc>
+        <lastmod>2024-07-05</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
     </url>
-    <url>
-        <loc>https://neocodenex.tech/trainers.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://neocodenex.tech/events.html</loc>
-        <lastmod>2024-06-30T04:27:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url> -->
 </urlset>
