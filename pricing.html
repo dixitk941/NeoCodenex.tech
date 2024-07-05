@@ -35,6 +35,60 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+      .pricing-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-item .btn-wrap {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pricing-item ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .pricing-item h4 {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+
+    .pricing-item.featured {
+      border: 2px solid #007bff;
+    }
+
+    /* Ensure equal height for all pricing cards */
+    .pricing-item {
+      height: 100%;
+    }
+
+    /* Flex container for pricing section */
+    .pricing .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    /* Flex container for each pricing card */
+    .pricing-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+
+  </style>
 </head>
 
 <body class="pricing-page">
