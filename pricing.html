@@ -94,8 +94,38 @@
       flex-direction: column;
     }
   </style>
+  
+<style>
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
 
-  </style>
+  .dark-mode .header,
+  .dark-mode .footer,
+  .dark-mode .pricing-item {
+    background-color: #1e1e1e;
+  }
+
+  .dark-mode .btn {
+    background-color: #444;
+    color: #ffffff;
+  }
+
+  .dark-mode .btn:hover {
+    background-color: #555;
+  }
+
+  /* Adjust other elements for dark mode */
+  .dark-mode .navmenu,
+  .dark-mode .page-title,
+  .dark-mode .breadcrumbs {
+    background-color: #333;
+    color: #ffffff;
+  }
+</style>
+
 </head>
 
 <body class="pricing-page">
@@ -118,6 +148,9 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       <a class="btn-getstarted" href="contact.html">Get Started</a>
+      <!-- Dark Mode Toggle Button -->
+<button id="dark-mode-toggle" class="btn btn-dark">Toggle Dark Mode</button>
+
     </div>
   </header>
 
@@ -410,6 +443,16 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  });
+</script>
+
 
 </body>
 
