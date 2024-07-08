@@ -44,6 +44,185 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .process-section
+    
+          /* Additional custom styles */
+            .carousel-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .carousel-item img {
+                max-width: 150px;
+                margin: 0 15px;
+                transition: transform 0.3s;
+            }
+            .carousel-item img:hover {
+                transform: scale(1.1);
+            }
+    
+         /* Include this in your styles.css */
+            .clients-section {
+                padding: 50px 20px;
+                background-color: #f9f9f9;
+                text-align: center;
+            }
+            .clients-section h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .clients-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .client {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                width: 200px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+            .client img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+            .client:hover {
+                transform: translateY(-10px);
+            }
+            .client h3 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                color: #007bff;
+            }
+            .client p {
+                font-size: 1em;
+                color: #555;
+       
+                padding: 50px 0;
+                background-color: #f8f9fa;
+            }
+            .process-step {
+                margin-bottom: 30px;
+            }
+            .process-step img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .process-step h4 {
+                margin-top: 15px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .process-step p {
+                margin-top: 10px;
+                font-size: 16px;
+                color: #555;
+            }
+    
+    .projects-section {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .project-item {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .project-item h3 {
+        margin: 10px 0 0;
+        font-size: 18px;
+    }
+    
+          .pricing-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          text-align: center;
+          padding: 20px;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .pricing-item .btn-wrap {
+          margin-top: auto;
+          display: flex;
+          justify-content: center;
+        }
+    
+        .pricing-item ul {
+          padding: 0;
+          list-style: none;
+        }
+    
+        .pricing-item h4 {
+          font-size: 24px;
+          margin: 15px 0;
+        }
+    
+        .pricing-item.featured {
+          border: 2px solid #007bff;
+        }
+    
+        /* Ensure equal height for all pricing cards */
+        .pricing-item {
+          height: 100%;
+        }
+    
+        /* Flex container for pricing section */
+        .pricing .row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+    
+        /* Flex container for each pricing card */
+        .pricing-item {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+    
+    
+        
+    
+    
+      </style>
+      
+    
 
 </head>
 
@@ -69,6 +248,10 @@
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
         <a class="btn-getstarted" href="contact.html">Get Started</a>
+        <button id="dark-mode-toggle" class="btn btn-secondary">
+          <i id="dark-mode-icon" class="bi bi-moon"></i>
+      </button>
+    
     </div>
 </header>
 
@@ -148,7 +331,7 @@
                           <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
                           <p>Events Organized</p>
                       </div>
-                  </div> End Stats Item --> -->
+                  </div> End Stats Item -->
 
                   <div class="col-lg-3 col-md-6">
                       <div class="stats-item text-center w-100 h-100">
@@ -159,7 +342,41 @@
               </div>
           </div>
       </section><!-- /Counts Section -->
-<!-- /Counts Section -->
+
+      <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <a href="http://www.parisspices.com" target="_blank">
+                        <img src="https://www.parisspices.com/product-img/logo.jpeg" alt="Paris Spices">
+                        <h3>Paris Spices</h3>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="http://www.hitownbears.live" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.a4kQNuHJDg3RWrBLa-RG-AAAAA?rs=1&pid=ImgDetMain" alt="HiTown Bears">
+                        <h3>HiTown Bears</h3>
+                    </a>
+                </div>
+                <div class="project-item">
+                  <a href="https://samindia-version1.vercel.app/" target="_blank">
+                      <img src="https://samindia-version1.vercel.app//assets/img/Screenshot_2024-07-02_105403-removebg-preview.png" alt="Sam India Group">
+                      <h3>Sam India Group</h3>
+                  </a>
+              </div>
+                <div class="project-item">
+                    <a href="https://karandixitportfolio.vercel.app" target="_blank">
+                        <img src="https://karandixitportfolio.vercel.app/images/Me.jpg" alt="Karan Dixit's Portfolio">
+                        <h3>Karan Dixit's Portfolio</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
   
   </main>
   
@@ -365,6 +582,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+
 
 </body>
 

@@ -2,324 +2,596 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeNex - Navigate Your Coding Future</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>NeoCodeNex - Web Development, SEO, Content Writing, Creative Design</title>
+  <meta name="description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
 
-        .header {
-            background-color: #6a6b6c; /* Dark background for better logo contrast */
-            color: #fff;
-            padding: 15px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+ <meta name="keywords" content="web development, SEO, content writing, creative design, NeoCodeNex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://neocodenex.tech">
+<meta property="og:title" content="NeoCodeNex">
+<meta property="og:description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+<meta property="og:image" content="https://neocodenex.tech/assets/img/logo.webp">
+<meta property="og:url" content="https://neocodenex.tech">
 
-        .logo img {
-            max-height: 80px; /* Adjusted for better visibility */
-        }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MSPJJ22CV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3MSPJJ22CV');
+  </script>
 
-        .navmenu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        .navmenu a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            transition: all 0.3s ease;
-        }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
-        .navmenu a:hover, .navmenu a.active {
-            background-color: #ffa726;
-            border-radius: 4px;
-        }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        .btn-getstarted {
-            background-color: #ffa726;
-            color: #1c1c1e;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+      .pricing-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .btn-getstarted:hover {
-            background-color: #fb8c00;
-            color: #fff;
-        }
+    .pricing-item .btn-wrap {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+    }
 
-        .hero {
-            position: relative;
-            height: 100vh;
-            background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            overflow: hidden;
-        }
+    .pricing-item ul {
+      padding: 0;
+      list-style: none;
+    }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
+    .pricing-item h4 {
+      font-size: 24px;
+      margin: 15px 0;
+    }
 
-        .hero .container {
-            z-index: 2;
-        }
+    .pricing-item.featured {
+      border: 2px solid #007bff;
+    }
 
-        .about .content {
-            padding: 20px;
-        }
+    /* Ensure equal height for all pricing cards */
+    .pricing-item {
+      height: 100%;
+    }
 
-        .read-more {
-            display: inline-block;
-            padding: 8px 15px;
-            background: #ffa726;
-            color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    /* Flex container for pricing section */
+    .pricing .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
-        .read-more:hover {
-            background: #fb8c00;
-        }
-         /* Counts Section */
-         .counts .stats-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+    /* Flex container for each pricing card */
+    .pricing-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  
 
-        .counts .stats-item span {
-            font-size: 36px;
-            font-weight: bold;
-            color: #ffa726;
-        }
-
-        .counts .stats-item p {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #333;
-        }
-
-        /* Why Us Section */
-        .why-us .why-box {
-            background: #24292e;
-            color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .why-us .icon-box {
-            text-align: center;
-            padding: 20px;
-            border-radius: 8px;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .why-us .icon-box i {
-            font-size: 48px;
-            color: #ffa726;
-            margin-bottom: 15px;
-        }
-
-        /* Features Section */
-        .features .features-item {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .features .features-item i {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .features .features-item h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .features .features-item a {
-            color: #24292e;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .features .features-item a:hover {
-            color: #ffa726;
-        }
-    </style>
 </head>
 
-<body class="index-page">
-    <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <img src="Screenshot_2024-06-26_182237-removebg-preview%20(2).png" alt="CodeNex Logo">
-            </a>
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-            <a class="btn-getstarted" href="contact.html">Get Started</a>
+<body class="pricing-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="https://karandixitportfolio.vercel.app/" target="_blank">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="contact.html">Get Started</a>
+      <body>
+        <!-- other body content -->
+        <button id="dark-mode-toggle" class="btn btn-secondary">
+            <i id="dark-mode-icon" class="bi bi-moon"></i>
+        </button>
+        <script src="path/to/your/main.js"></script>
+    </body>
+    
+
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Pricing</h1>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Pricing</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
 
-    <main class="main">
-        <section id="hero" class="hero section">
-            <div class="container">
-                <h2>Navigate Your Coding Future with CodeNex</h2>
-                <p>Unlock the potential of your business with tailored web development solutions.</p>
-                <div class="d-flex mt-4">
-                    <a href="services.html" class="btn-get-started">Explore Services</a>
-                </div>
-            </div>
-        </section>
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+  <div class="container">
+    <div class="row gy-3">
 
-        <section id="about" class="about section">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="About CodeNex">
-                    </div>
-                    <div class="col-lg-6 order-2 order-lg-1 content">
-                        <h3>About CodeNex</h3>
-                        <p class="fst-italic">
-                            At CodeNex, we specialize in creating dynamic, responsive, and user-centric web solutions that drive business success.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle"></i> Custom web development tailored to your needs.</li>
-                            <li><i class="bi bi-check-circle"></i> Innovative e-commerce solutions to boost your online sales.</li>
-                            <li><i class="bi bi-check-circle"></i> Progressive web apps that provide a seamless user experience.</li>
-                        </ul>
-                        <a href="about.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="counts" class="section counts">
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row gy-4">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div><!-- End Stats Item -->
+      <!-- Web Development Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Basic Website</h3>
+          <h4><sup>₹</sup>15,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹13,500 (10% off)</strong></h5>
+          <ul>
+            <li>Up to 3 pages</li>
+            <li>Basic Template Design</li>
+            <li>Responsive Design</li>
+            <li>Contact Form</li>
+            <li>1 Month Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div><!-- End Stats Item -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-item featured">
+          <h3>Standard Website</h3>
+          <h4><sup>₹</sup>40,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹34,000 (15% off)</strong></h5>
+          <ul>
+            <li>Up to 7 pages</li>
+            <li>Custom Design</li>
+            <li>Responsive Design</li>
+            <li>Blog Integration</li>
+            <li>2 Months Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+            <li><strong class="text-primary">Free SSL Certificate</strong></li>
+            <li><strong class="text-primary">Basic SEO Setup</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Events Organized</p>
-                        </div>
-                    </div><!-- End Stats Item -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="pricing-item">
+          <h3>Premium Website</h3>
+          <h4><sup>₹</sup>70,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹56,000 (20% off)</strong></h5>
+          <ul>
+            <li>Up to 15 pages</li>
+            <li>Custom Design</li>
+            <li>E-commerce Integration</li>
+            <li>SEO Ready</li>
+            <li>3 Months Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+            <li><strong class="text-primary">Advanced SEO Setup</strong></li>
+            <li><strong class="text-primary">Free Maintenance for 3 Months</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Expert Developers</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-                </div>
-            </div>
-        </section><!-- /Counts Section -->
+      <!-- SEO Services Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="pricing-item">
+          <h3>Basic SEO</h3>
+          <h4><sup>₹</sup>10,000/month<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹9,000 (10% off)</strong></h5>
+          <ul>
+            <li>Keyword Research</li>
+            <li>On-Page SEO</li>
+            <li>Monthly Reports</li>
+            <li>3 Target Keywords</li>
+            <li><strong class="text-primary">Free SEO Consultation</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-        <section id="why-us" class="section why-us">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="why-box">
-                            <h3>Why Choose CodeNex?</h3>
-                            <p>
-                                At CodeNex, we specialize in providing comprehensive web development solutions that empower businesses to thrive in the digital landscape. Our experienced team ensures innovative and tailored approaches to meet each client's unique needs.
-                            </p>
-                            <div class="text-center">
-                                <a href="about.html" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div><!-- End Why Box -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="pricing-item featured">
+          <h3>Advanced SEO</h3>
+          <h4><sup>₹</sup>25,000/month<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹21,250 (15% off)</strong></h5>
+          <ul>
+            <li>Keyword Research</li>
+            <li>On-Page & Basic Off-Page SEO</li>
+            <li>Content Optimization</li>
+            <li>5 Target Keywords</li>
+            <li><strong class="text-primary">Free SEO Consultation</strong></li>
+            <li><strong class="text-primary">Competitor Analysis</strong></li>
+            <li><strong class="text-primary">Website Speed Optimization</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-8 d-flex align-items-stretch">
-                        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="col-xl-4">
-                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                    <i class="bi bi-clipboard-data"></i>
-                                    <h4>Data-Driven Solutions</h4>
-                                    <p>We leverage data to create strategies that drive results and enhance business growth.</p>
-                                </div>
-                            </div><!-- End Icon Box -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="pricing-item">
+          <h3>SEO Audit</h3>
+          <h4><sup>₹</sup>5,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹4,500 (10% off)</strong></h5>
+          <ul>
+            <li>Comprehensive Website Audit</li>
+            <li>Detailed Report</li>
+            <li>Improvement Recommendations</li>
+            <li>1-Hour Consultation</li>
+            <li><strong class="text-primary">Free Follow-Up Audit</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                    <i class="bi bi-gem"></i>
-                                    <h4>Innovative Technologies</h4>
-                                    <p>Our expertise in the latest technologies ensures that your business stays ahead of the curve.</p>
-                                </div>
-                            </div><!-- End Icon Box -->
+      <!-- Content Writing Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="pricing-item">
+          <h3>Blog Writing</h3>
+          <h4><sup>₹</sup>2,000 per post<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹1,800 (10% off)</strong></h5>
+          <ul>
+            <li>Up to 800 words</li>
+            <li>SEO Optimized</li>
+            <li>Original Content</li>
+            <li><strong class="text-primary">1 Free Revision</strong></li>
+            <li><strong class="text-primary">Fast Delivery</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                                    <i class="bi bi-inboxes"></i>
-                                    <h4>Comprehensive Services</h4>
-                                    <p>From planning to execution, we provide a full range of services to meet your web development needs.</p>
-                                </div>
-                            </div><!-- End Icon Box -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- /Why Us Section -->
-    </main>
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="pricing-item featured">
+          <h3>Website Content</h3>
+          <h4><sup>₹</sup>7,000 per page<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹5,950 (15% off)</strong></h5>
+          <ul>
+            <li>Up to 1000 words</li>
+            <li>SEO Optimized</li>
+            <li>High Quality Content</li>
+            <li><strong class="text-primary">Free Content Strategy Session</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
-            document.querySelector('#navmenu').classList.toggle('active');
-        });
-    </script>
+      <!-- Creative Design Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="pricing-item">
+          <h3>Logo Design</h3>
+          <h4><sup>₹</sup>5,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹4,500 (10% off)</strong></h5>
+          <ul>
+            <li>2 Initial Concepts</li>
+            <li>Up to 3 Revisions</li>
+            <li>High Resolution Files</li>
+            <li><strong class="text-primary">Free Brand Consultation</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+        <div class="pricing-item featured">
+          <h3>Social Media Kit</h3>
+          <h4><sup>₹</sup>10,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹8,500 (15% off)</strong></h5>
+          <ul>
+            <li>Profile & Cover Designs</li>
+            <li>4 Custom Posts</li>
+            <li>High Resolution Files</li>
+            <li><strong class="text-primary">Free Social Media Strategy Session</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+<!-- Footer Section -->
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+        <a href="index.html" class="logo d-flex align-items-center">
+         
+<!--  <img src="assets/img/logo.webp" alt="NeoCodenex Logo">-->
+          <span>NeoCodenex</span>
+        </a>
+        <p>Providing top-notch web development, SEO, content writing, and creative design services to elevate your business.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="https://twitter.com/NeoCodenex" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/neocodenex/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karan-dixit-77424124b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          <strong>WhatsApp:</strong> +91 9068065361<br>
+          <strong>Email:</strong> work.neocodenex@gmail.com<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NeoCodenex</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://karandixitportfolio.vercel.app/">dixitk941 & Neocodenex</a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Back to top button -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+/**
+* Template Name: Mentor
+* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Updated: Jun 14 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+(function() {
+  "use strict";
+
+  /**
+   * Apply .scrolled class to the body as the page is scrolled down
+   */
+  function toggleScrolled() {
+    const selectBody = document.querySelector('body');
+    const selectHeader = document.querySelector('#header');
+    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  }
+
+  document.addEventListener('scroll', toggleScrolled);
+  window.addEventListener('load', toggleScrolled);
+
+  /**
+   * Mobile nav toggle
+   */
+  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
+  function mobileNavToogle() {
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavToggleBtn.classList.toggle('bi-list');
+    mobileNavToggleBtn.classList.toggle('bi-x');
+  }
+  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+
+  /**
+   * Hide mobile nav on same-page/hash links
+   */
+  document.querySelectorAll('#navmenu a').forEach(navmenu => {
+    navmenu.addEventListener('click', () => {
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+
+  });
+
+  /**
+   * Toggle mobile nav dropdowns
+   */
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+    navmenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentNode.classList.toggle('active');
+      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      e.stopImmediatePropagation();
+    });
+  });
+
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
+
+  /**
+   * Scroll top button
+   */
+  let scrollTop = document.querySelector('.scroll-top');
+
+  function toggleScrollTop() {
+    if (scrollTop) {
+      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+    }
+  }
+  scrollTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop);
+
+  /**
+   * Animation on scroll function and init
+   */
+  function aosInit() {
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }
+  window.addEventListener('load', aosInit);
+
+  /**
+   * Initiate glightbox
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+  /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
+
+  /**
+   * Init swiper sliders
+   */
+  function initSwiper() {
+    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+      let config = JSON.parse(
+        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+      );
+
+      if (swiperElement.classList.contains("swiper-tab")) {
+        initSwiperWithCustomPagination(swiperElement, config);
+      } else {
+        new Swiper(swiperElement, config);
+      }
+    });
+  }
+
+  window.addEventListener("load", initSwiper);
+  const toggleButton = document.getElementById("dark-mode-toggle");
+  const toggleIcon = document.getElementById("dark-mode-icon");
+
+  function updateIcon() {
+    if (document.documentElement.classList.contains("dark-mode")) {
+      toggleIcon.classList.remove("bi-moon");
+      toggleIcon.classList.add("bi-sun");
+    } else {
+      toggleIcon.classList.remove("bi-sun");
+      toggleIcon.classList.add("bi-moon");
+    }
+  }
+
+  toggleButton.addEventListener("click", function() {
+    document.documentElement.classList.toggle("dark-mode");
+    updateIcon();
+
+    // Save the user's preference to local storage
+    if (document.documentElement.classList.contains("dark-mode")) {
+      localStorage.setItem("dark-mode", "enabled");
+    } else {
+      localStorage.setItem("dark-mode", "disabled");
+    }
+  });
+
+  // On page load, check if dark mode was previously enabled
+  if (localStorage.getItem("dark-mode") === "enabled") {
+    document.documentElement.classList.add("dark-mode");
+    updateIcon();
+  }
+
+})();
+</script>
+
+
 </body>
+
+
 
 </html>
