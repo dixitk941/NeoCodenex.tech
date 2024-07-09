@@ -63,6 +63,5 @@ Stay updated with our latest projects and insights:
 Ready to start your project? Get in touch with us:
 
 - **Email**: work.neocodenex@gmail.com
-- **Phone**: +91-9068065361
-
+- **Phone**:   +91-9068065361
 We look forward to collaborating with you and bringing your ideas to life!
