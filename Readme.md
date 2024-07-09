@@ -49,7 +49,7 @@ We believe in a systematic and transparent process to ensure the best outcomes f
 6. **Launch**: Making your project live.
 7. **Maintenance**: Providing ongoing support and updates.
 
-For more details, visit our [process page](https://neocodenex.tech/process).
+For more details, visit our [process page](https://neocodenex.tech/).
 
 ## Connect With Us
 
