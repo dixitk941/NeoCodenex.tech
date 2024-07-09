@@ -60,6 +60,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <script>
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api-azure.botsonic.ai",
+      token: "cbbed945-d833-465d-93e1-94d85ca7a54e",
+    });
+  </script>
   <style>
 .process-section
 
@@ -456,15 +476,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </section><!-- /Features Section -->
 
-<div class="homepage-pricing-title">
-  <div class="container text-center">
-    <h1>Pricing</h1>
-  </div>
-</div>
+
 
 
    <!-- Pricing Section -->
 <section id="pricing" class="pricing section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <p>One Year Free Domain With All</p>
+    </div><!-- End Section Title -->
   <div class="container">
     <div class="row gy-3">
 
@@ -724,27 +746,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </section> -->
  <section class="process-section text-center">
-        <div class="container">
-            <h2>Our Process</h2>
-            <p class="lead">Creative Solutions for Your Brand</p>
+
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Process</h2>
+      <p>Creative Solutions for Your Brand</p>
+    </div><!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <br>
             <p>Over the years, we have developed an efficient process that allows us to create effective results aimed at achieving business goals.</p>
             <div class="row mt-5">
-                <div class="col-md-3 process-step">
+                <div class="col-md-3 process-step"  data-aos="fade-up" data-aos-delay="200">
                     <img src="https://img.freepik.com/free-vector/processing-concept-illustration_114360-1395.jpg?t=st=1719913160~exp=1719916760~hmac=4b96e040be9f8f835bca7ec5cd24533a29aba918e8895fbb6489606050cf3f5c&w=740" alt="Discovery & Planning">
                     <h4>Discovery & Planning</h4>
                     <p>We dive deep into your goals, audience, and desired features. Together, we map out your project roadmap with key milestones and timelines, ensuring clarity from the start.</p>
                 </div>
-                <div class="col-md-3 process-step">
+                <div class="col-md-3 process-step"  data-aos="fade-up" data-aos-delay="300">
                     <img src="https://img.freepik.com/free-vector/product-iteration-concept-illustration_114360-4725.jpg?t=st=1719913065~exp=1719916665~hmac=f0af590705f486073d52d98ea07abdabd6a8a93576019a6208221145acdaff70&w=740" alt="Design & Prototyping">
                     <h4>Design & Prototyping</h4>
                     <p>Our UI/UX wizards transform your vision into interactive wireframes and prototypes. This lets you experience the user journey firsthand and provide feedback before development begins, ensuring a design that’s both beautiful and functional.</p>
                 </div>
-                <div class="col-md-3 process-step">
+                <div class="col-md-3 process-step" data-aos="fade-up" data-aos-delay="400">
                     <img src="https://img.freepik.com/free-vector/timeline-infographic-template_23-2148908203.jpg?t=st=1719913332~exp=1719916932~hmac=2dcf52186456c60cc7fb2e663ba312a3d4029312c539ac9ea411ddbc01586745&w=1380" alt="Development & Testing">
                     <h4>Development & Testing</h4>
                     <p>Our expert developers craft your website or app using cutting-edge tech and best practices. We prioritize clean code, secure architecture, and scalability for a robust and future-proof solution with rigorous testing throughout, guaranteeing a flawless user experience.</p>
                 </div>
-                <div class="col-md-3 process-step">
+                <div class="col-md-3 process-step"  data-aos="fade-up" data-aos-delay="500">
                     <img src="https://img.freepik.com/free-vector/online-tech-talks-concept-illustration_114360-7379.jpg?t=st=1719913382~exp=1719916982~hmac=fb818cfe45b75fa2ae0da9c1e29915478e3673d744cbea1195337443c139ce7a&w=1060" alt="Launch & Support">
                     <h4>Launch & Support</h4>
                     <p>Your launch is just the beginning! We guide you through app store optimization, marketing strategies, and user analytics. Plus, our 24/7 support ensures a smooth journey beyond launch.</p>
@@ -755,34 +783,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <section id="projects" class="projects-section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <p>Some of My Projects</p>
+    </div><!-- End Section Title -->
     <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-item">
+      
+        <div class="projects-grid"> <div class="project-item" data-aos="fade-up" data-aos-delay="100">
                 <a href="http://www.parisspices.com" target="_blank">
                     <img src="https://www.parisspices.com/product-img/logo.jpeg" alt="Paris Spices">
                     <h3>Paris Spices</h3>
                 </a>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-aos="fade-up" data-aos-delay="200">
                 <a href="http://www.hitownbears.live" target="_blank">
                     <img src="https://th.bing.com/th/id/OIP.a4kQNuHJDg3RWrBLa-RG-AAAAA?rs=1&pid=ImgDetMain" alt="HiTown Bears">
                     <h3>HiTown Bears</h3>
                 </a>
             </div>
-            <div class="project-item">
+            <div class="project-item" data-aos="fade-up" data-aos-delay="300">
               <a href="https://samindia-version1.vercel.app/" target="_blank">
                   <img src="https://samindia-version1.vercel.app//assets/img/Screenshot_2024-07-02_105403-removebg-preview.png" alt="Sam India Group">
                   <h3>Sam India Group</h3>
               </a>
           </div>
-            <div class="project-item">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="400">
                 <a href="https://karandixitportfolio.vercel.app" target="_blank">
                     <img src="https://karandixitportfolio.vercel.app/images/Me.jpg" alt="Karan Dixit's Portfolio">
                     <h3>Karan Dixit's Portfolio</h3>
                 </a>
             </div>
-          <div class="project-item">
+            <div class="project-item" data-aos="fade-up" data-aos-delay="500">
               <a href="https://genzconnect.vercel.app" target="_blank">
                   <img src="https://genzconnect.vercel.app/assets/remotitle.png" alt="Karan Dixit's Portfolio">
                   
@@ -792,7 +825,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div><h3>Genzconnect</h3></div>
               </a>
           </div>
-          <div class="project-item">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="600">
             <a href="https://climatecheck360v3.vercel.app/" target="_blank">
                 <img src="https://climatecheck360v3.vercel.app/static/media/city.e1698332.jpg" alt="Karan Dixit's Portfolio">
                 
@@ -809,76 +842,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
 
-<!-- /Courses Section -->
-<!-- Trainers Index Section -->
-<!-- <section id="trainers-index" class="section trainers-index">
+
+
+
+
+<section id="trainers" class="section trainers">
+
+  
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Team</h2>
+      <p>our developers</p>
+    </div><!-- End Section Title -->
+  
 
   <div class="container">
 
-    <div class="row">
+    <div class="row gy-5">
 
-      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-        <div class="member">
-          <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-          <div class="member-content">
-            <h4>Walter White</h4>
-            <span>Web Development</span>
-            <p>
-              Expert in creating responsive and dynamic web applications. Passionate about modern web technologies.
-            </p>
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+        <div class="member-img">
+          <img src="https://genzconnect.vercel.app/assets/KaranDixit.jpg" class="img-fluid" alt="">
+          <div class="social">
+            <a href="https://www.x.com/dixitk941"><i class="bi bi-twitter-x"></i></a>
+            <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+            <a href="https://www.instagram.com/karan_dixit19"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/karan-dixit-7223a628a/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.github.com/dixitk941"><i class="bi bi-github"></i></a>
           </div>
         </div>
-      </div><!-- End Team Member --
+        <div class="member-info text-center">
+          <h4>Karan Dixit</h4>
+          <span>Developer & Founder of NeoCodenex</span>
+          <p>I am a diligent BCA student at Rajiv Academy of Technology and Management, deeply passionate about coding and web development. Currently, I am actively engaged in exploring diverse facets of the tech world and endeavoring to construct intriguing projects.</p> 
+        </div>
+      </div><!-- End Team Member -->
 
-      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-        <div class="member">
-          <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-          <div class="member-content">
-            <h4>Sarah Jhinson</h4>
-            <span>Marketing</span>
-            <p>
-              Skilled in digital marketing strategies and analytics. Helps businesses grow through effective online campaigns.
-            </p>
+   
+ 
+      
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-img">
+            <img src="https://genzconnect.vercel.app/assets/Rashii.jpeg" class="img-fluid" alt="">
             <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <!-- <a href="https://www.x.com/dixitk941"><i class="bi bi-twitter-x"></i></a> -->
+              <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+              <a href="https://www.instagram.com/rashi_garg_24"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/rashi-garg-84b002294/"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.github.com/rashigarg04"><i class="bi bi-github"></i></a>
             </div>
           </div>
-        </div>
-      </div><!-- End Team Member --
-
-      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-        <div class="member">
-          <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-          <div class="member-content">
-            <h4>William Anderson</h4>
-            <span>Content</span>
-            <p>
-              Specializes in crafting compelling content that engages and converts. Experienced in SEO-driven content creation.
-            </p>
-            <div class="social">
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Team Member --
-
-    </div>
-
+   
+          <div class="member-info text-center">
+            <h4>Rashi Garg</h4>
+            <span>Webdeveloper <!--& CEO of NeoCodenex--></span>
+<p>Hi there, I'm Rashi Garg! 👋 I'm a B.Tech student in Computer Science at IILM University. I'm passionate about new technologies and open to collaborations in software and web development.</p>
   </div>
+</div><!-- End Team Member -->
 
-</section>/Trainers Index Section -->
+
+
+        
+
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+          <div class="member-img">
+            <img src="assets/img/team/Team2.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <!-- <a href="https://www.x.com/dixitk941"><i class="bi bi-twitter-x"></i></a> -->
+              <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+              <a href="https://www.instagram.com/the_mayanks"><i class="bi bi-instagram"></i></a>
+              <!-- <a href="https://www.linkedin.com/in/karan-dixit-7223a628a/"><i class="bi bi-linkedin"></i></a> -->
+            </div>
+          </div>
+          <div class="member-info text-center">
+            <h4>Mayank</h4>
+            <span>CyberSecurity Expert</span>
+  <!-- <p>I am a diligent BCA student at Rajiv Academy of Technology and Management, deeply passionate about coding and web development. Currently, I am actively engaged in exploring diverse facets of the tech world and endeavoring to construct intriguing projects.</p> -->
+          </div><!-- End Team Member -->
+        </div>
+       
+
+</div>
+</section>
+ 
+
 <!-- Footer Section -->
 <footer id="footer" class="footer">
   <div class="container">
@@ -958,26 +1005,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
-<!--   <script>
-  (function (w, d, s, o, f, js, fjs) {
-    w["botsonic_widget"] = o;
-    w[o] =
-      w[o] ||
-      function () {
-        (w[o].q = w[o].q || []).push(arguments);
-      };
-    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-    js.id = o;
-    js.src = f;
-    js.async = 1;
-    fjs.parentNode.insertBefore(js, fjs);
-  })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
-  Botsonic("init", {
-    serviceBaseUrl: "https://api-azure.botsonic.ai",
-    token: "cbbed945-d833-465d-93e1-94d85ca7a54e",
-  });
-</script>
- -->
+
 
   
     
