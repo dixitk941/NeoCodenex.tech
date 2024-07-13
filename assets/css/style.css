@@ -1,189 +1,200 @@
-
 :root {
-    /* Default variables (light mode) */
-    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --heading-font: "Raleway", sans-serif;
-    --nav-font: "Poppins", sans-serif;
-    --background-color: #ffffff;
-    --default-color: #444444;
-    --heading-color: #37423b;
-    --accent-color: #5fcf80;
-    --contrast-color: #ffffff;
-    --nav-color: #272828;
-    --nav-hover-color: #5fcf80;
-    --nav-dropdown-background-color: #ffffff;
-    --nav-dropdown-color: #272828;
-    --nav-dropdown-hover-color: #5fcf80;
-    scroll-behavior: smooth;
-  }
-  
-  :root.dark-mode {
-    /* Dark mode variables */
-    --background-color: #121212;
-    --default-color: #e0e0e0;
-    --heading-color: #ffffff;
-    --accent-color: #5fcf80;
-    --contrast-color: #ffffff;
-    --nav-color: #ffffff;
-    --nav-hover-color: #5fcf80;
-    --nav-dropdown-background-color: #1f1f1f;
-    --nav-dropdown-color: #e0e0e0;
-    --nav-dropdown-hover-color: #5fcf80;
-  }
-  
-  /* General Styles */
-  body {
-    color: var(--default-color);
-    background-color: var(--background-color);
-    font-family: var(--default-font);
-  }
-  
-  a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    color: color-mix(in srgb, var(--accent-color), transparent 25%);
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--heading-color);
-    font-family: var(--heading-font);
-  }
-  
-  /* Header Styles */
-  .header {
-    color: var(--default-color);
-    background-color: var(--background-color);
-    padding: 15px 0;
-    transition: all 0.5s;
-    z-index: 997;
-  }
-  
-  .header .logo h1 {
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--accent-color);
-  }
-  
-  .header .btn-getstarted {
-    color: var(--contrast-color);
-    background: var(--accent-color);
-    font-size: 14px;
-    padding: 8px 25px;
-    margin: 0 0 0 30px;
-    border-radius: 50px;
-    transition: 0.3s;
-  }
-  
-  .header .btn-getstarted:hover {
-    color: var(--contrast-color);
-    background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  }
-  
-  .scrolled .header {
-    box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
-  }
-  
-  /* Navigation Menu */
-  .navmenu a {
-    color: var(--nav-color);
-    padding: 18px 15px;
-    font-size: 16px;
-    font-family: var(--nav-font);
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-  
-  .navmenu li:hover > a,
-  .navmenu .active {
-    color: var(--nav-hover-color);
-  }
-  
-  .navmenu .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-color);
-  }
-  
-  .navmenu .dropdown ul a:hover {
-    color: var(--nav-dropdown-hover-color);
-  }
-  
-  /* Dark Mode Navigation Menu */
-  .dark-mode .navmenu a {
-    color: var(--nav-color);
-  }
-  
-  .dark-mode .navmenu li:hover > a,
-  .dark-mode .navmenu .active {
-    color: var(--nav-hover-color);
-  }
-  
-  .dark-mode .navmenu .dropdown ul a {
-    color: var(--nav-dropdown-color);
-  }
-  
-  .dark-mode .navmenu .dropdown ul a:hover {
-    color: var(--nav-dropdown-hover-color);
-  }
-  
-  /* Light Mode Navigation Menu */
-  .light-mode .navmenu a {
-    color: var(--nav-color);
-  }
-  
-  .light-mode .navmenu li:hover > a,
-  .light-mode .navmenu .active {
-    color: var(--nav-hover-color);
-  }
-  
-  .light-mode .navmenu .dropdown ul a {
-    color: var(--nav-dropdown-color);
-  }
-  
-  .light-mode .navmenu .dropdown ul a:hover {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .pricing-item.featured {
-    border: 2px solid #007bff;
+  /* Default variables (light mode) */
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #37423b;
+  --accent-color: #5fcf80;
+  --contrast-color: #ffffff;
+  --nav-color: #272828;
+  --nav-hover-color: #5fcf80;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #272828;
+  --nav-dropdown-hover-color: #5fcf80;
+  scroll-behavior: smooth;
 }
-/* 
- Dark mode styles */
+
+:root.dark-mode {
+  /* Dark mode variables */
+  --background-color: #121212;
+  --default-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --accent-color: #5fcf80;
+  --contrast-color: #ffffff;
+  --nav-color: #ffffff;
+  --nav-hover-color: #5fcf80;
+  --nav-dropdown-background-color: #1f1f1f;
+  --nav-dropdown-color: #e0e0e0;
+  --nav-dropdown-hover-color: #5fcf80;
+}
+
+/* General Styles */
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+html {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/* Header Styles */
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 15px 0;
+  transition: background-color 0.5s, color 0.5s;
+  z-index: 997;
+}
+
+.header .logo h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  transition: color 0.5s;
+}
+
+.header .btn-getstarted {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header .btn-getstarted:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
+  transition: box-shadow 0.5s;
+}
+
+/* Navigation Menu */
+.navmenu a {
+  color: var(--nav-color);
+  padding: 18px 15px;
+  font-size: 16px;
+  font-family: var(--nav-font);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.navmenu li:hover > a,
+.navmenu .active {
+  color: var(--nav-hover-color);
+}
+
+.navmenu .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  color: var(--nav-dropdown-color);
+  transition: color 0.3s;
+}
+
+.navmenu .dropdown ul a:hover {
+  color: var(--nav-dropdown-hover-color);
+}
+
+/* Dark Mode Navigation Menu */
+.dark-mode .navmenu a {
+  color: var(--nav-color);
+}
+
+.dark-mode .navmenu li:hover > a,
+.dark-mode .navmenu .active {
+  color: var(--nav-hover-color);
+}
+
+.dark-mode .navmenu .dropdown ul a {
+  color: var(--nav-dropdown-color);
+}
+
+.dark-mode .navmenu .dropdown ul a:hover {
+  color: var(--nav-dropdown-hover-color);
+}
+
+/* Light Mode Navigation Menu */
+.light-mode .navmenu a {
+  color: var(--nav-color);
+}
+
+.light-mode .navmenu li:hover > a,
+.light-mode .navmenu .active {
+  color: var(--nav-hover-color);
+}
+
+.light-mode .navmenu .dropdown ul a {
+  color: var(--nav-dropdown-color);
+}
+
+.light-mode .navmenu .dropdown ul a:hover {
+  color: var(--nav-dropdown-hover-color);
+}
+
+.pricing-item.featured {
+  border: 2px solid #007bff;
+  transition: border-color 0.5s;
+}
+
+/* Dark mode styles */
 .dark-mode .projects-section {
-    background-color: var(--background-color);
-    color: #f9f9f9;
+  background-color: var(--background-color);
+  color: #f9f9f9;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .dark-mode .project-item {
-    border: 1px solid #444;
-   background-color: var(--background-color);
-    color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444;
+  background-color: var(--background-color);
+  color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s, box-shadow 0.5s;
 }
 
 .dark-mode .pricing-item {
-    border: 1px solid #444;
-    background-color: var(--background-color);
-    color: #f9f9f9;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #444;
+  background-color: var(--background-color);
+  color: #f9f9f9;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s, box-shadow 0.5s;
 }
 
 .dark-mode .pricing-item.featured {
-    border: 2px solid #007bff;
-}   
+  border: 2px solid #007bff;
+  transition: border-color 0.5s;
+}
 
 .whatsapp-float {
   position: fixed;
@@ -209,7 +220,6 @@
   width: 35px;
   height: 35px;
 }
-
 
 .floating-menu {
   position: fixed;
@@ -261,4 +271,43 @@
 
 .menu-item:hover {
   background-color: #555;
+}
+
+/* Corner flow animation */
+.color-transition::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  transition: transform 1s ease, background-color 1s ease;
+  transform: scale(0);
+  transform-origin: top left;
+  z-index: 999;
+}
+
+body.color-transition {
+  overflow: hidden;
+}
+
+body.color-transition::before {
+  transform: scale(1);
+}
+
+
+/* Add this CSS to create the corner flow animation */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), background-color 1s ease;
+  transform: scale(0);
+  transform-origin: top left;
+  z-index: 999;
 }
