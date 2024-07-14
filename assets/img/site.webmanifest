@@ -2,20 +2,21 @@
     "name": "NeoCodenex",
     "short_name": "NeoCodenex",
     "description": "Providing top-notch web development, SEO, content writing, and creative design services to elevate your business.",
-    "start_url": "https://neocodenex.tech/assets/img/",
+    "start_url": "https://neocodenex.tech",
     "icons": [
-        {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
+      {
+        "src": "assets/img/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
-}
+  }
+  
