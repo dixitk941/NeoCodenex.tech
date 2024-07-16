@@ -1,5 +1,3 @@
-import { injectSpeedInsights } from '@vercel/speed-insights';
-
 (function() {
   "use strict";
 
@@ -128,7 +126,4 @@ import { injectSpeedInsights } from '@vercel/speed-insights';
     document.documentElement.classList.add("dark-mode");
     updateIcon();
   }
-
-  // Inject Speed Insights
-  injectSpeedInsights();
 })();
