@@ -5,6 +5,10 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
 (function() {
   "use strict";
 
