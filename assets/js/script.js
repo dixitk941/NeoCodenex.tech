@@ -1,14 +1,5 @@
-/**
- * Template Name: Mentor
- * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
- * Updated: Jun 14 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
-
 import { injectSpeedInsights } from '@vercel/speed-insights';
 
-injectSpeedInsights();
 (function() {
   "use strict";
 
@@ -138,4 +129,6 @@ injectSpeedInsights();
     updateIcon();
   }
 
+  // Inject Speed Insights
+  injectSpeedInsights();
 })();
