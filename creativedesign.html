@@ -76,7 +76,22 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
+body.dark-mode .bg-light-mode {
+  background-color: #333;
+}
 
+body.dark-mode .text-dark-mode {
+  color: #fff;
+}
+
+body.dark-mode .service-box, body.dark-mode .features-item {
+  border-color: #444;
+  background-color: #444;
+}
+
+body.dark-mode .stretched-link {
+  color: #ddd;
+}
 
   </style>
 
@@ -425,41 +440,41 @@
 
 </section>
 
-    <!-- Creative Design Services Section -->
-    <section id="creative-design" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="service-box">
-              <i class="bi bi-palette"></i>
-              <h3>Graphic Design</h3>
-              <p>From logos to brochures, our graphic design services will elevate your brand's visual identity.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-box">
-              <i class="bi bi-pc-display"></i>
-              <h3>Web Design</h3>
-              <p>We create aesthetically pleasing and user-friendly websites that captivate your audience.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box">
-              <i class="bi bi-vector-pen"></i>
-              <h3>Brand Identity</h3>
-              <p>Develop a unique and consistent brand identity that resonates with your target audience.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box">
-              <i class="bi bi-layout-text-window-reverse"></i>
-              <h3>UI/UX Design</h3>
-              <p>Enhance user satisfaction by improving the usability and accessibility of your digital products.</p>
-            </div>
-          </div>
+<!-- Creative Design Services Section -->
+<section id="creative-design" class="services py-5 text-dark-mode bg-light-mode">
+  <div class="container">
+    <div class="row text-center gy-4">
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="service-box p-4 border rounded shadow-sm bg-light-mode text-dark-mode">
+          <i class="bi bi-palette display-3 text-purple mb-3"></i>
+          <h3 class="h4">Graphic Design</h3>
+          <p>From logos to brochures, our graphic design services will elevate your brand's visual identity.</p>
         </div>
       </div>
-    </section>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-box p-4 border rounded shadow-sm bg-light-mode text-dark-mode">
+          <i class="bi bi-pc-display display-3 text-info mb-3"></i>
+          <h3 class="h4">Web Design</h3>
+          <p>We create aesthetically pleasing and user-friendly websites that captivate your audience.</p>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box p-4 border rounded shadow-sm bg-light-mode text-dark-mode">
+          <i class="bi bi-vector-pen display-3 text-warning mb-3"></i>
+          <h3 class="h4">Brand Identity</h3>
+          <p>Develop a unique and consistent brand identity that resonates with your target audience.</p>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box p-4 border rounded shadow-sm bg-light-mode text-dark-mode">
+          <i class="bi bi-layout-text-window-reverse display-3 text-danger mb-3"></i>
+          <h3 class="h4">UI/UX Design</h3>
+          <p>Enhance user satisfaction by improving the usability and accessibility of your digital products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 
   <!-- Footer -->
