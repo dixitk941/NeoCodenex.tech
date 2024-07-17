@@ -1,0 +1,53 @@
+:root {
+    --bg-light: hsl(0, 0%, 98%);
+    --bg-gradient-light: linear-gradient(to bottom right, hsl(0, 0%, 100%) 3%, hsl(0, 0%, 96%) 97%);
+    --border-light: hsl(0, 0%, 80%);
+    --text-dark: hsl(0, 0%, 10%);
+    --text-gray-dark: hsl(0, 0%, 40%);
+    --shadow-light: 0 4px 8px hsla(0, 0%, 0%, 0.1);
+  
+    /* Additional light mode colors as needed */
+  }
+  .light-mode {
+    --bg-gradient-onyx: var(--bg-gradient-light);
+    --bg-gradient-jet: var(--bg-gradient-light);
+    --bg-gradient-yellow-1: var(--bg-gradient-light);
+    --bg-gradient-yellow-2: var(--bg-gradient-light);
+    --border-gradient-onyx: var(--border-light);
+    --text-gradient-yellow: var(--text-dark);
+  
+    --jet: var(--text-dark);
+    --onyx: var(--bg-light);
+    --eerie-black-1: var(--bg-light);
+    --eerie-black-2: var(--bg-light);
+    --smoky-black: var(--bg-light);
+    --white-1: var(--text-dark);
+    --white-2: var(--text-gray-dark);
+    --orange-yellow-crayola: var(--text-dark);
+    --vegas-gold: var(--text-gray-dark);
+    --light-gray: var(--text-gray-dark);
+    --light-gray-70: var(--text-gray-dark);
+    --bittersweet-shimmer: var(--text-gray-dark);
+  
+    --shadow-1: var(--shadow-light);
+    --shadow-2: var(--shadow-light);
+    --shadow-3: var(--shadow-light);
+    --shadow-4: var(--shadow-light);
+    --shadow-5: var(--shadow-light);
+  
+    /* Additional light mode overrides as needed */
+  }
+  body {
+    background: var(--smoky-black);
+    color: var(--white-1);
+  }
+  
+  .sidebar,
+  article {
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    box-shadow: var(--shadow-1);
+  }
+  
+  /* Add more styles referencing the new variables as needed */
+      
