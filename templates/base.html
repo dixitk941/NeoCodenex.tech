@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content goes here -->
+</head>
+<body>
+    <!-- Your body content goes here -->
+    {% block header %}
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+          <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="">
+            <!-- <h1 class="sitename">NeoCodenex</h1> -->
+          </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('services') }}">Services</a></li>
+                    <!-- <li><a href="https://karandixitportfolio.vercel.app/" target="_blank">Portfolio</a></li> -->
+                    <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                    <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <button id="dark-mode-toggle" class="btn btn-secondary">
+                      <i id="dark-mode-icon" class="bi bi-moon"></i>
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% endblock %}
+    <!-- Footer Section -->
+    {% block footer %}
+    <footer id="footer" class="footer">
+         <!-- Footer Section -->
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            
+  <!-- <img src="enlarge_Screenshot_from_2024-06-29_09-05-59-removebg-preview(1).png" alt="NeoCodenex Logo">-->
+            <span>NeoCodenex</span>
+          </a>
+          <p>Providing top-notch web development, SEO, content writing, and creative design services to elevate your business.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/NeoCodenex" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/neocodenex/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/karan-dixit-77424124b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('privacy') }}">Privacy</a></li>
+          </ul>
+              </div>
+  
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>WhatsApp:</strong> +91 9068065361<br>
+            <strong>Email:</strong> work.neocodenex@gmail.com<br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>NeoCodenex</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://karandixitportfolio.vercel.app/">dixitk941 & neocodenex</a>
+      </div>
+    </div>
+  </footer>
+  
+  <a href="https://wa.me/9068065361" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+  
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Preloader -->
+    <div id="preloader"></div>
+  
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  
+    <!-- Main JS File -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  
+  
+   
+      </script>
+  
+  
+  </body>
+  
+  </html>
+  
+    </footer>
+    {% endblock %}
+
+    <!-- Your script tags go here -->
+</body>
+</html>

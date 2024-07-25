@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NeoCodeNex - Web Development, SEO, Content Writing, Creative Design</title>
+  <meta name="description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+  <meta name="keywords" content="web development, SEO, content writing, creative design, NeoCodeNex">
+  <link rel="canonical" href="https://neocodenex.tech">
+  <meta property="og:title" content="NeoCodeNex">
+  <meta property="og:description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+  <meta property="og:image" content="https://neocodenex.tech/assets/img/logo.webp">
+  <meta property="og:url" content="https://neocodenex.tech">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeoCodeNex">
+  <meta name="twitter:description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+  <meta name="twitter:image" content="https://neocodenex.tech/assets/img/logo.webp">
+
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z7NSWQ2');</script>
+<!-- End Google Tag Manager -->
+
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MSPJJ22CV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MSPJJ22CV');
+</script>
+   <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script>
+    window.sb = window.sb || function(){(sb.q = sb.q || []).push(arguments);};
+    sb('init', 'prj_aEsREECgU2lGBRfm7zi0wcFaareQ');
+  </script>
+
+
+  <!-- Favicons -->
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+
+<!-- Android Chrome Icons -->
+<link rel="icon" sizes="192x192" href="{{ url_for('static', filename='img/android-chrome-192x192.png') }}">
+<link rel="icon" sizes="512x512" href="{{ url_for('static', filename='img/android-chrome-512x512.png') }}">
+
+<!-- PNG favicons for different sizes -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
+
+<!-- Manifest for PWA -->
+<link rel="manifest" href="{{ url_for('static', filename='img/site.webmanifest') }}">
+
+<!-- Browser Configuration File for IE and Edge -->
+<link rel="browserconfig" href="{{ url_for('static', filename='img/browserconfig.xml') }}">
+
+<!-- Safari Pinned Tab Icon -->
+<link rel="mask-icon" href="{{ url_for('static', filename='img/safari-pinned-tab.svg') }}" color="#5bbad5">
+
+<!-- Meta Tags for Mobile and App Titles -->
+<meta name="apple-mobile-web-app-title" content="NeoCodenex">
+<meta name="application-name" content="NeoCodenex">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <style>
+      .pricing-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-item .btn-wrap {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pricing-item ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .pricing-item h4 {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+
+    .pricing-item.featured {
+      border: 2px solid #007bff;
+    }
+
+    /* Ensure equal height for all pricing cards */
+    .pricing-item {
+      height: 100%;
+    }
+
+    /* Flex container for pricing section */
+    .pricing .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    /* Flex container for each pricing card */
+    .pricing-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NeoCodeNex",
+      "url": "https://neocodenex.tech",
+      "logo": "https://neocodenex.tech/assets/img/favicon.ico",
+      "sameAs": [
+        "https://twitter.com/dixitk941",
+        "https://www.instagram.com/neocodenex/",
+        "https://www.linkedin.com/in/karan-dixit-77424124b/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 9068065361",
+        "contactType": "Customer Service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maheswari colony Iglas Road",
+        "addressLocality": "Hathras",
+        "addressRegion": "UP",
+        "postalCode": "204101",
+        "addressCountry": "IN"
+      },
+      "foundingDate": "2024",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Karan Dixit"
+        }
+      ],
+      "description": "NeoCodeNex offers web development, SEO, content writing, and creative design services.",
+      "numberOfEmployees": "10",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "50"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Rashi"
+          },
+          "reviewBody": "Excellent service and support!"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8"
+          },
+          "reviewBody": "Very professional and timely delivery."
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "13500.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Basic Website",
+            "description": "Up to 3 pages, Basic Template Design, Responsive Design, Contact Form, 1 Month Support, Free Domain for 1 Year"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "18000.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "StartUp Website",
+            "description": "Up to 5 pages, Basic Template Design, Responsive Design, Contact Form, 1 Month Support, Free Domain for 1 Year, Free Hosting for 6 Months, Basic SEO Setup"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "22500.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Small Business Website",
+            "description": "Up to 5 pages, Basic Template Design, Responsive Design, Product Listing, Contact Form, 1 Month Support, Free Domain for 1 Year, Free Hosting for 1 Year, Basic SEO Setup, Monthly Maintenance"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "34000.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Standard Website",
+            "description": "Up to 7 pages, Custom Design, Responsive Design, Blog Integration, 2 Months Support, Free Domain for 1 Year, Free SSL Certificate, Basic SEO Setup, Monthly Maintenance, Free Email Setup"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "56000.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Premium Website",
+            "description": "Up to 15 pages, Custom Design, E-commerce Integration, SEO Ready, 3 Months Support, Free Domain for 1 Year, Advanced SEO Setup, Free Maintenance for 3 Months, Free Email Setup, Priority Support"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "9000.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Basic SEO",
+            "description": "Keyword Research, On-Page SEO, Monthly Reports, 3 Target Keywords, Free SEO Consultation, Free Technical Audit"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "21250.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Advanced SEO",
+            "description": "Keyword Research, On-Page & Basic Off-Page SEO, Content Optimization, 5 Target Keywords, Free SEO Consultation, Competitor Analysis, Website Speed Optimization, Free Technical Audit, Monthly Strategy Sessions"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "4500.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "SEO Audit",
+            "description": "Comprehensive Website Audit, Detailed Report, Improvement Recommendations, 1-Hour Consultation, Free Follow-Up Audit, Action Plan for Improvements"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "1800.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Blog Writing",
+            "description": "Up to 800 words, SEO Optimized, Original Content, 1 Free Revision, Fast Delivery, Topic Research Included"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "5950.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Content",
+            "description": "Up to 1000 words, SEO Optimized, High Quality Content, Free Content Strategy Session, Free Revisions, Free Competitor Analysis"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "900.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Creative Content",
+            "description": "Up to 500 words, Original and Creative Content, Customized to Your Needs, 1 Free Revision, Fast Delivery"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "1250.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Logo Design",
+            "description": "Custom Logo Design, 3 Initial Concepts, Unlimited Revisions, Source Files Included, Fast Delivery, Free Brand Consultation"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://neocodenex.tech/form.html",
+          "priceCurrency": "INR",
+          "price": "4500.00",
+          "priceValidUntil": "2025-12-31",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Business Card Design",
+            "description": "Custom Business Card Design, Double-Sided Design, Print-Ready Files, Unlimited Revisions, Fast Delivery"
+          },
+          "eligibleCustomerType": "BusinessUser",
+          "availability": "InStock",
+          "validFrom": "2024-07-08"
+        }
+      ]
+    }
+    </script>
+    
+
+</head>
+
+<body class="pricing-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="">
+        <!-- <h1 class="sitename">NeoCodenex</h1> -->
+      </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="https://karandixitportfolio.vercel.app/" target="_blank">Portfolio</a></li>
+                <!-- <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li> -->
+                <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <button id="dark-mode-toggle" class="btn btn-secondary">
+                  <i id="dark-mode-icon" class="bi bi-moon"></i>
+                </button>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Pricing</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Pricing</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+  <div class="container">
+    <div class="row gy-3">
+
+      <!-- Web Development Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Basic Website</h3>
+          <h4><sup>₹</sup>15,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹13,500 (10% off)</strong></h5>
+          <ul>
+            <li>Up to 3 pages</li>
+            <li>Basic Template Design</li>
+            <li>Responsive Design</li>
+            <li>Contact Form</li>
+            <li>1 Month Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>StartUp Website</h3>
+          <h4><sup>₹</sup>20,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹18,000 (10% off)</strong></h5>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Basic Template Design</li>
+            <li>Responsive Design</li>
+            <li>Contact Form</li>
+            <li>1 Month Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+            <li><strong class="text-primary">Free Hosting for 6 Months</strong></li>
+            <li><strong class="text-primary">Basic SEO Setup</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Small Business Website</h3>
+          <h4><sup>₹</sup>25,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹22,500 (10% off)</strong></h5>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Basic Template Design</li>
+            <li>Responsive Design</li>
+            <li>Product Listing</li>
+            <li>Contact Form</li>
+            <li>1 Month Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+            <li><strong class="text-primary">Free Hosting for 1 Year</strong></li>
+            <li><strong class="text-primary">Basic SEO Setup</strong></li>
+            <li><strong class="text-primary">Monthly Maintenance</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-item featured">
+          <h3>Standard Website</h3>
+          <h4><sup>₹</sup>40,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹34,000 (15% off)</strong></h5>
+          <ul>
+            <li>Up to 7 pages</li>
+            <li>Custom Design</li>
+            <li>Responsive Design</li>
+            <li>Blog Integration</li>
+            <li>2 Months Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+            <li><strong class="text-primary">Free SSL Certificate</strong></li>
+            <li><strong class="text-primary">Basic SEO Setup</strong></li>
+            <li><strong class="text-primary">Monthly Maintenance</strong></li>
+            <li><strong class="text-primary">Free Email Setup</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="pricing-item">
+          <h3>Premium Website</h3>
+          <h4><sup>₹</sup>70,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹56,000 (20% off)</strong></h5>
+          <ul>
+            <li>Up to 15 pages</li>
+            <li>Custom Design</li>
+            <li>E-commerce Integration</li>
+            <li>SEO Ready</li>
+            <li>3 Months Support</li>
+            <li><strong class="text-primary">Free Domain for 1 Year</strong></li>
+            <li><strong class="text-primary">Advanced SEO Setup</strong></li>
+            <li><strong class="text-primary">Free Maintenance for 3 Months</strong></li>
+            <li><strong class="text-primary">Free Email Setup</strong></li>
+            <li><strong class="text-primary">Priority Support</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br> 
+
+   <!-- Hosting Plans -->
+      <div class="row gy-3">
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="1100">
+          <div class="pricing-item">
+            <h3>Basic Hosting</h3>
+            <h4><sup>₹</sup>5,000/year<span></span></h4>
+            <h5><strong style="color: #28a745;">Discounted Price: ₹2,500 (50% off)</strong></h5>
+            <ul>
+              <li>10 GB Storage</li>
+              <li>Unlimited Bandwidth</li>
+              <li>1 Domain</li>
+              <li>5 Email Accounts</li>
+              <li><strong class="text-primary">24/7 Support</strong></li>
+              <li><strong class="text-primary">Free SSL Certificate</strong></li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="form.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="1200">
+          <div class="pricing-item">
+            <h3>Standard Hosting</h3>
+            <h4><sup>₹</sup>10,000/year<span></span></h4>
+            <h5><strong style="color: #28a745;">Discounted Price: ₹5,000 (50% off)</strong></h5>
+            <ul>
+              <li>50 GB Storage</li>
+              <li>Unlimited Bandwidth</li>
+              <li>5 Domains</li>
+              <li>20 Email Accounts</li>
+              <li><strong class="text-primary">24/7 Support</strong></li>
+              <li><strong class="text-primary">Free SSL Certificate</strong></li>
+              <li><strong class="text-primary">Daily Backups</strong></li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="form.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="1300">
+          <div class="pricing-item">
+            <h3>Premium Hosting</h3>
+            <h4><sup>₹</sup>20,000/year<span></span></h4>
+            <h5><strong style="color: #28a745;">Discounted Price: ₹10,000 (50% off)</strong></h5>
+            <ul>
+              <li>200 GB Storage</li>
+              <li>Unlimited Bandwidth</li>
+              <li>10 Domains</li>
+              <li>50 Email Accounts</li>
+              <li><strong class="text-primary">24/7 Support</strong></li>
+              <li><strong class="text-primary">Free SSL Certificate</strong></li>
+              <li><strong class="text-primary">Daily Backups</strong></li>
+              <li><strong class="text-primary">Advanced Security</strong></li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="form.html" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+</div>
+<br>
+<br>
+<br>
+
+    <div class="row gy-3">
+
+      <!-- SEO Services Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="pricing-item">
+          <h3>Basic SEO</h3>
+          <h4><sup>₹</sup>10,000/month<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹9,000 (10% off)</strong></h5>
+          <ul>
+            <li>Keyword Research</li>
+            <li>On-Page SEO</li>
+            <li>Monthly Reports</li>
+            <li>3 Target Keywords</li>
+            <li><strong class="text-primary">Free SEO Consultation</strong></li>
+            <li><strong class="text-primary">Free Technical Audit</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="pricing-item featured">
+          <h3>Advanced SEO</h3>
+          <h4><sup>₹</sup>25,000/month<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹21,250 (15% off)</strong></h5>
+          <ul>
+            <li>Keyword Research</li>
+            <li>On-Page & Basic Off-Page SEO</li>
+            <li>Content Optimization</li>
+            <li>5 Target Keywords</li>
+            <li><strong class="text-primary">Free SEO Consultation</strong></li>
+            <li><strong class="text-primary">Competitor Analysis</strong></li>
+            <li><strong class="text-primary">Website Speed Optimization</strong></li>
+            <li><strong class="text-primary">Free Technical Audit</strong></li>
+            <li><strong class="text-primary">Monthly Strategy Sessions</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="pricing-item">
+          <h3>SEO Audit</h3>
+          <h4><sup>₹</sup>5,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹4,500 (10% off)</strong></h5>
+          <ul>
+            <li>Comprehensive Website Audit</li>
+            <li>Detailed Report</li>
+            <li>Improvement Recommendations</li>
+            <li>1-Hour Consultation</li>
+            <li><strong class="text-primary">Free Follow-Up Audit</strong></li>
+            <li><strong class="text-primary">Action Plan for Improvements</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Writing Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="pricing-item">
+          <h3>Blog Writing</h3>
+          <h4><sup>₹</sup>2,000 per post<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹1,800 (10% off)</strong></h5>
+          <ul>
+            <li>Up to 800 words</li>
+            <li>SEO Optimized</li>
+            <li>Original Content</li>
+            <li><strong class="text-primary">1 Free Revision</strong></li>
+            <li><strong class="text-primary">Fast Delivery</strong></li>
+            <li><strong class="text-primary">Topic Research Included</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="pricing-item featured">
+          <h3>Website Content</h3>
+          <h4><sup>₹</sup>7,000 per page<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹5,950 (15% off)</strong></h5>
+          <ul>
+            <li>Up to 1000 words</li>
+            <li>SEO Optimized</li>
+            <li>High Quality Content</li>
+            <li><strong class="text-primary">Free Content Strategy Session</strong></li>
+            <li><strong class="text-primary">Free Revisions</strong></li>
+            <li><strong class="text-primary">Free Competitor Analysis</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creative Design Pricing -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="pricing-item">
+          <h3>Logo Design</h3>
+          <h4><sup>₹</sup>5,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹4,500 (10% off)</strong></h5>
+          <ul>
+            <li>2 Initial Concepts</li>
+            <li>Up to 3 Revisions</li>
+            <li>High Resolution Files</li>
+            <li><strong class="text-primary">Free Brand Consultation</strong></li>
+            <li><strong class="text-primary">Free Business Card Design</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+        <div class="pricing-item featured">
+          <h3>Social Media Kit</h3>
+          <h4><sup>₹</sup>10,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹8,500 (15% off)</strong></h5>
+          <ul>
+            <li>Profile & Cover Designs</li>
+            <li>4 Custom Posts</li>
+            <li>High Resolution Files</li>
+            <li><strong class="text-primary">Free Social Media Strategy Session</strong></li>
+            <li><strong class="text-primary">Monthly Updates</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="1300">
+        <div class="pricing-item">
+          <h3>Brand Identity Package</h3>
+          <h4><sup>₹</sup>30,000<span></span></h4>
+          <h5><strong style="color: #28a745;">Discounted Price: ₹25,500 (15% off)</strong></h5>
+          <ul>
+            <li>Logo Design</li>
+            <li>Business Card Design</li>
+            <li>Letterhead Design</li>
+            <li>Envelope Design</li>
+            <li><strong class="text-primary">Free Brand Consultation</strong></li>
+            <li><strong class="text-primary">Brand Guidelines Document</strong></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="form.html" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+<!-- Footer Section -->
+
+<footer id="footer" class="footer">
+  <!-- Footer Section -->
+
+<div class="container">
+<div class="row gy-4">
+ <div class="col-lg-5 col-md-12 footer-info">
+    <a href="{{ url_for('index') }}" class="logo d-flex align-items-center"></a>
+     
+<!-- <img src="enlarge_Screenshot_from_2024-06-29_09-05-59-removebg-preview(1).png" alt="NeoCodenex Logo">-->
+     <span>NeoCodenex</span>
+   </a>
+   <p>Providing top-notch web development, SEO, content writing, and creative design services to elevate your business.</p>
+   <div class="social-links d-flex mt-4">
+     <a href="https://twitter.com/NeoCodenex" class="twitter"><i class="bi bi-twitter"></i></a>
+     <a href="https://www.instagram.com/neocodenex/" class="instagram"><i class="bi bi-instagram"></i></a>
+     <a href="https://www.linkedin.com/in/karan-dixit-77424124b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+   </div>
+ </div>
+
+ <div class="col-lg-2 col-6 footer-links">
+   <h4>Quick Links</h4>
+   <ul>
+     <li><a href="{{ url_for('index') }}">Home</a></li>
+     <li><a href="{{ url_for('about') }}">About Us</a></li>
+     <li><a href="{{ url_for('services') }}">Services</a></li>
+     <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+     <li><a href="{{ url_for('contact') }}">Contact</a></li>
+     <li><a href="{{ url_for('privacy') }}">Privacy</a></li>
+   </ul>
+       </div>
+
+ <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+   <h4>Contact Us</h4>
+   <p>
+     <strong>WhatsApp:</strong> +91 9068065361<br>
+     <strong>Email:</strong> work.neocodenex@gmail.com<br>
+   </p>
+ </div>
+</div>
+</div>
+<div class="container mt-4">
+<div class="copyright">
+ &copy; Copyright <strong><span>NeoCodenex</span></strong>. All Rights Reserved
+</div>
+<div class="credits">
+ Designed by <a href="https://karandixitportfolio.vercel.app/">dixitk941 & neocodenex</a>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/9068065361" class="whatsapp-float" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+
+
+
+
+
+
+
+
+
+</footer>
+
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+<!-- Main JS File -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+<!-- Your script tags go here -->
+</body>
+</html>

@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NeoCodeNex - Web Development, SEO, Content Writing, Creative Design</title>
+  <meta name="description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+  <meta name="keywords" content="web development, SEO, content writing, creative design, NeoCodeNex">
+  <link rel="canonical" href="https://neocodenex.tech">
+  <meta property="og:title" content="NeoCodeNex">
+  <meta property="og:description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+  <meta property="og:image" content="https://neocodenex.tech/assets/img/logo.webp">
+  <meta property="og:url" content="https://neocodenex.tech">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeoCodeNex">
+  <meta name="twitter:description" content="NeoCodeNex offers web development, SEO, content writing, and creative design services. Contact us today for expert solutions tailored to your needs.">
+  <meta name="twitter:image" content="https://neocodenex.tech/assets/img/logo.webp">
+
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z7NSWQ2');</script>
+<!-- End Google Tag Manager -->
+
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MSPJJ22CV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MSPJJ22CV');
+</script>
+   <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script>
+    window.sb = window.sb || function(){(sb.q = sb.q || []).push(arguments);};
+    sb('init', 'prj_aEsREECgU2lGBRfm7zi0wcFaareQ');
+  </script>
+
+
+  <!-- Favicons -->
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+
+<!-- Android Chrome Icons -->
+<link rel="icon" sizes="192x192" href="{{ url_for('static', filename='img/android-chrome-192x192.png') }}">
+<link rel="icon" sizes="512x512" href="{{ url_for('static', filename='img/android-chrome-512x512.png') }}">
+
+<!-- PNG favicons for different sizes -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
+
+<!-- Manifest for PWA -->
+<link rel="manifest" href="{{ url_for('static', filename='img/site.webmanifest') }}">
+
+<!-- Browser Configuration File for IE and Edge -->
+<link rel="browserconfig" href="{{ url_for('static', filename='img/browserconfig.xml') }}">
+
+<!-- Safari Pinned Tab Icon -->
+<link rel="mask-icon" href="{{ url_for('static', filename='img/safari-pinned-tab.svg') }}" color="#5bbad5">
+
+<!-- Meta Tags for Mobile and App Titles -->
+<meta name="apple-mobile-web-app-title" content="NeoCodenex">
+<meta name="application-name" content="NeoCodenex">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <style>
+    .process-section
+    
+          /* Additional custom styles */
+            .carousel-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .carousel-item img {
+                max-width: 150px;
+                margin: 0 15px;
+                transition: transform 0.3s;
+            }
+            .carousel-item img:hover {
+                transform: scale(1.1);
+            }
+    
+         /* Include this in your styles.css */
+            .clients-section {
+                padding: 50px 20px;
+                background-color: #f9f9f9;
+                text-align: center;
+            }
+            .clients-section h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .clients-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .client {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                width: 200px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+            .client img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+            .client:hover {
+                transform: translateY(-10px);
+            }
+            .client h3 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                color: #007bff;
+            }
+            .client p {
+                font-size: 1em;
+                color: #555;
+       
+                padding: 50px 0;
+                background-color: #f8f9fa;
+            }
+            .process-step {
+                margin-bottom: 30px;
+            }
+            .process-step img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .process-step h4 {
+                margin-top: 15px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .process-step p {
+                margin-top: 10px;
+                font-size: 16px;
+                color: #555;
+            }
+    
+    .projects-section {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .project-item {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .project-item h3 {
+        margin: 10px 0 0;
+        font-size: 18px;
+    }
+    
+          .pricing-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          text-align: center;
+          padding: 20px;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .pricing-item .btn-wrap {
+          margin-top: auto;
+          display: flex;
+          justify-content: center;
+        }
+    
+        .pricing-item ul {
+          padding: 0;
+          list-style: none;
+        }
+    
+        .pricing-item h4 {
+          font-size: 24px;
+          margin: 15px 0;
+        }
+    
+        .pricing-item.featured {
+          border: 2px solid #007bff;
+        }
+    
+        /* Ensure equal height for all pricing cards */
+        .pricing-item {
+          height: 100%;
+        }
+    
+        /* Flex container for pricing section */
+        .pricing .row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+    
+        /* Flex container for each pricing card */
+        .pricing-item {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        
+    
+    
+        
+    
+    
+      </style>
+
+      <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NeoCodeNex",
+  "url": "https://neocodenex.tech",
+  "logo": "https://neocodenex.tech/assets/img/favicon.ico",
+  "sameAs": [
+    "https://twitter.com/dixitk941",
+    "https://www.instagram.com/neocodenex/",
+    "https://www.linkedin.com/in/karan-dixit-77424124b/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91 9068065361",
+    "contactType": "Customer Service",
+    "areaServed": "IN",
+    "availableLanguage": ["en", "hi"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Maheswari colony Iglas Road",
+    "addressLocality": "Hathras",
+    "addressRegion": "UP",
+    "postalCode": "204101",
+    "addressCountry": "IN"
+  },
+  "foundingDate": "2024",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Karan Dixit"
+    }
+  ],
+  "description": "NeoCodeNex offers web development, SEO, content writing, and creative design services.",
+  "numberOfEmployees": "10",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "50"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Rashi"
+      },
+      "reviewBody": "Excellent service and support!"
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8"
+      },
+      "reviewBody": "Very professional and timely delivery."
+    }
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "13500.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Basic Website",
+        "description": "Up to 3 pages, Basic Template Design, Responsive Design, Contact Form, 1 Month Support, Free Domain for 1 Year"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "18000.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "StartUp Website",
+        "description": "Up to 5 pages, Basic Template Design, Responsive Design, Contact Form, 1 Month Support, Free Domain for 1 Year, Free Hosting for 6 Months, Basic SEO Setup"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "22500.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Small Business Website",
+        "description": "Up to 5 pages, Basic Template Design, Responsive Design, Product Listing, Contact Form, 1 Month Support, Free Domain for 1 Year, Free Hosting for 1 Year, Basic SEO Setup, Monthly Maintenance"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "34000.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Standard Website",
+        "description": "Up to 7 pages, Custom Design, Responsive Design, Blog Integration, 2 Months Support, Free Domain for 1 Year, Free SSL Certificate, Basic SEO Setup, Monthly Maintenance, Free Email Setup"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "56000.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Premium Website",
+        "description": "Up to 15 pages, Custom Design, E-commerce Integration, SEO Ready, 3 Months Support, Free Domain for 1 Year, Advanced SEO Setup, Free Maintenance for 3 Months, Free Email Setup, Priority Support"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "9000.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Basic SEO",
+        "description": "Keyword Research, On-Page SEO, Monthly Reports, 3 Target Keywords, Free SEO Consultation, Free Technical Audit"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "21250.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Advanced SEO",
+        "description": "Keyword Research, On-Page & Basic Off-Page SEO, Content Optimization, 5 Target Keywords, Free SEO Consultation, Competitor Analysis, Website Speed Optimization, Free Technical Audit, Monthly Strategy Sessions"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "4500.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "SEO Audit",
+        "description": "Comprehensive Website Audit, Detailed Report, Improvement Recommendations, 1-Hour Consultation, Free Follow-Up Audit, Action Plan for Improvements"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "1800.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Blog Writing",
+        "description": "Up to 800 words, SEO Optimized, Original Content, 1 Free Revision, Fast Delivery, Topic Research Included"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "5950.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Website Content",
+        "description": "Up to 1000 words, SEO Optimized, High Quality Content, Free Content Strategy Session, Free Revisions, Free Competitor Analysis"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "900.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Creative Content",
+        "description": "Up to 500 words, Original and Creative Content, Customized to Your Needs, 1 Free Revision, Fast Delivery"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "1250.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Logo Design",
+        "description": "Custom Logo Design, 3 Initial Concepts, Unlimited Revisions, Source Files Included, Fast Delivery, Free Brand Consultation"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    },
+    {
+      "@type": "Offer",
+      "url": "https://neocodenex.tech/form.html",
+      "priceCurrency": "INR",
+      "price": "4500.00",
+      "priceValidUntil": "2025-12-31",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Business Card Design",
+        "description": "Custom Business Card Design, Double-Sided Design, Print-Ready Files, Unlimited Revisions, Fast Delivery"
+      },
+      "eligibleCustomerType": "BusinessUser",
+      "availability": "InStock",
+      "validFrom": "2024-07-08"
+    }
+  ]
+}
+</script>
+
+      
+    
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="">
+        <!-- <h1 class="sitename">NeoCodenex</h1> -->
+      </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="https://karandixitportfolio.vercel.app/" target="_blank">Portfolio</a></li>
+                <!-- <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li> -->
+                <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <button id="dark-mode-toggle" class="btn btn-secondary">
+                  <i id="dark-mode-icon" class="bi bi-moon"></i>
+                </button>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>About Us</h1>
+              <p class="mb-0">Navigate Your Coding Future with NeoCodenex</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="current">About Us</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+  
+    <!-- About Us Section -->
+    <section id="about-us" class="section about-us">
+  
+      <div class="container">
+  
+        <div class="row gy-4">
+  
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{{ url_for('static', filename='img/about-2.webp') }}" class="img-fluid" alt="">
+        
+          </div>
+  
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Empowering Your Digital Presence</h3>
+            <p class="fst-italic">
+              NeoCodenex is dedicated to transforming your ideas into digital reality through innovative web solutions.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Expertise in crafting bespoke web applications and websites.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Committed to delivering user-centric designs and robust functionalities.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Partnering with clients to achieve digital excellence and business growth.</span></li>
+            </ul>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section><!-- /About Us Section -->
+  
+    <!-- Counts Section -->
+      <section id="counts" class="section counts">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="stats-item text-center w-100 h-100">
+                          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                          <p>Happy Clients</p>
+                      </div>
+                  </div><!-- End Stats Item -->
+
+                  <div class="col-lg-3 col-md-6">
+                      <div class="stats-item text-center w-100 h-100">
+                          <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
+                          <p>Projects Completed</p>
+                      </div>
+                  </div><!-- End Stats Item -->
+
+<!--                   <div class="col-lg-3 col-md-6">
+                      <div class="stats-item text-center w-100 h-100">
+                          <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                          <p>Events Organized</p>
+                      </div>
+                  </div> End Stats Item -->
+
+                  <div class="col-lg-3 col-md-6">
+                      <div class="stats-item text-center w-100 h-100">
+                          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                          <p>Expert Developers</p>
+                      </div>
+                  </div><!-- End Stats Item -->
+              </div>
+          </div>
+      </section><!-- /Counts Section -->
+      <br><br><br>
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My Projects</h2>
+        <p>Some of My Projects</p>
+      </div><!-- End Section Title -->
+
+      <section id="projects" class="projects-section">
+            <!-- Section Title -->
+   
+
+        <div class="container">
+          
+            <div class="projects-grid">
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                    <a href="http://www.parisspices.com" target="_blank">
+                        <img src="https://www.parisspices.com/assets/img/logo.jpeg" alt="Paris Spices">
+                        <h3>Paris Spices</h3>
+                    </a>
+                </div>
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                    <a href="http://www.hitownbears.live" target="_blank">
+                        <img src="https://th.bing.com/th/id/OIP.a4kQNuHJDg3RWrBLa-RG-AAAAA?rs=1&pid=ImgDetMain" alt="HiTown Bears">
+                        <h3>HiTown Bears</h3>
+                    </a>
+                </div>
+                <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                  <a href="https://samindia-version1.vercel.app/" target="_blank">
+                      <img src="https://samindia-version1.vercel.app//assets/img/Screenshot_2024-07-02_105403-removebg-preview.png" alt="Sam India Group">
+                      <h3>Sam India Group</h3>
+                  </a>
+              </div>
+                <div class="project-item" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://karandixitportfolio.vercel.app" target="_blank">
+                        <img src="https://karandixitportfolio.vercel.app/images/Me.jpg" alt="Karan Dixit's Portfolio">
+                        <h3>Karan Dixit's Portfolio</h3>
+                    </a>
+                  </div>
+                  <div class="project-item"  data-aos="fade-up" data-aos-delay="500">
+                    <a href="https://genzconnect.vercel.app" target="_blank">
+                        <img src="https://genzconnect.vercel.app/assets/remotitle.png" alt="Karan Dixit's Portfolio">
+                        
+                        <br>
+                        <br>
+                        <br><br>
+                        <div><h3>Genzconnect</h3></div>
+                    </a>
+                </div>
+                <div class="project-item" data-aos="fade-up" data-aos-delay="600">
+                  <a href="https://climatecheck360v3.vercel.app/" target="_blank">
+                      <img src="https://climatecheck360v3.vercel.app/static/media/city.e1698332.jpg" alt="Karan Dixit's Portfolio">
+                      
+                      <br>
+                      <br>
+                      <br><br>
+                      <div><h3>climatecheck360</h3></div>
+                  </a>
+              </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+  
+  </main>
+  
+<!--     Testimonials Section --
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title --
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What are they saying</p>
+      </div><!-- End Section Title --
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item --
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section
+ -->
+ 
+
+
+<section id="trainers" class="section trainers">
+
+  
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Team</h2>
+    <p>our developers</p>
+  </div><!-- End Section Title -->
+
+
+<div class="container">
+
+  <div class="row gy-5">
+
+    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+      <div class="member-img">
+        <img src="https://genzconnect.vercel.app/assets/KaranDixit.jpg" class="img-fluid" alt="">
+        <div class="social">
+          <a href="https://www.x.com/dixitk941"><i class="bi bi-twitter-x"></i></a>
+          <!-- <a href="#"><i class="bi bi-facebook"></i></a> -->
+          <a href="https://www.instagram.com/karan_dixit19"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karan-dixit-7223a628a/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.github.com/dixitk941"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+      <div class="member-info text-center">
+        <h4>Karan Dixit</h4>
+        <span>Developer & Founder of NeoCodenex</span>
+        <p>I am a diligent BCA student at Rajiv Academy of Technology and Management, deeply passionate about coding and web development. Currently, I am actively engaged in exploring diverse facets of the tech world and endeavoring to construct intriguing projects.</p> 
+      </div>
+    </div><!-- End Team Member -->
+
+ 
+
+    
+   <!-- <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+        <div class="member-img">
+          <img src="https://genzconnect.vercel.app/assets/Rashii.jpeg" class="img-fluid" alt="">
+          <div class="social">
+            <!-- <a href="https://www.x.com/dixitk941"><i class="bi bi-twitter-x"></i></a> -->
+            <!-- <a href="#"><i class="bi bi-facebook"></i></a> --
+            <a href="https://www.instagram.com/rashi_garg_24"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rashi-garg-84b002294/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.github.com/rashigarg04"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+ 
+        <div class="member-info text-center">
+          <h4>Rashi Garg</h4>
+          <span>Webdeveloper <!--& CEO of NeoCodenex--</span>
+<p>Hi there, I'm Rashi Garg! 👋 I'm a B.Tech student in Computer Science at IILM University. I'm passionate about new technologies and open to collaborations in software and web development.</p>
+</div>
+</div> End Team Member -->
+
+
+
+      
+<!-- 
+      <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+        <div class="member-img">
+          <img src="assets/img/team/Team2.jpg" class="img-fluid" alt="">
+          <div class="social">
+            <!-- <a href="https://www.x.com/dixitk941"><i class="bi bi-twitter-x"></i></a> --
+            <!-- <a href="#"><i class="bi bi-facebook"></i></a> --
+            <a href="https://www.instagram.com/the_mayanks"><i class="bi bi-instagram"></i></a>
+            <!-- <a href="https://www.linkedin.com/in/karan-dixit-7223a628a/"><i class="bi bi-linkedin"></i></a> --
+          </div>
+        </div>
+        <div class="member-info text-center">
+          <h4>Mayank</h4>
+          <span>CyberSecurity Expert</span>
+<!-- <p>I am a diligent BCA student at Rajiv Academy of Technology and Management, deeply passionate about coding and web development. Currently, I am actively engaged in exploring diverse facets of the tech world and endeavoring to construct intriguing projects.</p> --
+        </div>End Team Member -->
+      </div>
+     
+
+</div>
+</section>
+
+
+  <!-- Footer Section -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+         <a href="{{ url_for('index') }}" class="logo d-flex align-items-center"></a>
+          
+<!-- <img src="enlarge_Screenshot_from_2024-06-29_09-05-59-removebg-preview(1).png" alt="NeoCodenex Logo">-->
+          <span>NeoCodenex</span>
+        </a>
+        <p>Providing top-notch web development, SEO, content writing, and creative design services to elevate your business.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="https://twitter.com/NeoCodenex" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/neocodenex/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karan-dixit-77424124b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+          <li><a href="{{ url_for('services') }}">Services</a></li>
+          <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          <li><a href="{{ url_for('privacy') }}">Privacy</a></li>
+        </ul>
+            </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          <strong>WhatsApp:</strong> +91 9068065361<br>
+          <strong>Email:</strong> work.neocodenex@gmail.com<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NeoCodenex</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://karandixitportfolio.vercel.app/">dixitk941 & neocodenex</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/9068065361" class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+ 
+    </script>
+
+
+</body>
+
+</html>
