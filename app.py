@@ -18,6 +18,9 @@ def about():
 @app.route('/creativedesign')
 def creativedesign():
     return render_template('creativedesign.html')
+@app.route('/sitemap')
+def sitemap():
+    return render_template('sitemap.xml')
 
 @app.route('/form')
 def form():
