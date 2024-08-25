@@ -434,7 +434,7 @@ body.dark-mode {
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="">
+        <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="logo">
         <!-- <h1 class="sitename">NeoCodenex</h1> -->
       </a>
         <nav id="navmenu" class="navmenu">
@@ -449,8 +449,12 @@ body.dark-mode {
                 <button id="dark-mode-toggle" class="btn btn-secondary">
                   <i id="dark-mode-icon" class="bi bi-moon"></i>
                 </button>
-            </ul>
-        </nav>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+          <a class="btn-getstarted" href="{{ url_for('contact') }}">Get Started</a>
+
+    
     </div>
 </header>
 
